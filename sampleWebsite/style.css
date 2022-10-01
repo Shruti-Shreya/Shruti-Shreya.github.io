@@ -124,9 +124,9 @@ nav .fa{
 }
 
 
-/* ------offering -------*/
+/* ------home -------*/
 
-.offering{
+.home{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -150,7 +150,7 @@ p{
     display: flex;
     justify-content: space-around;
 }
-.offering-col{
+.home-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -165,7 +165,7 @@ h3{
     margin: 10px 0;
 }
 
-.offering-col:hover{
+.home-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 
 }
