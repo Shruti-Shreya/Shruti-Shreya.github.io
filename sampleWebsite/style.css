@@ -10,7 +10,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(source/bgpic.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(source/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -23,7 +23,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 200px;
 
 }
 .nav-links{
@@ -229,27 +229,27 @@ h3{
 
 
 
-/* ------solution------ */
-.solution{
+/* ------mission------ */
+.mission{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-.solution-col{
+.mission-col{
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
-.solution-col img{
+.mission-col img{
     width: 100%;
     border-radius: 10px;
 }
-.solution-col p{
+.mission-col p{
     padding: 0;
 }
-.solution-col h3{
+.mission-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
