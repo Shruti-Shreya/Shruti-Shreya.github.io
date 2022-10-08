@@ -3,18 +3,36 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .image{
     width: 100%;
     height: 100%;
 }
 .header{
     min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(source/background\ image.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    /* background-image: linear-gradient(rgba(52, 63, 105, 0.2),rgba(41, 89, 138, 0.7)), url(new-image/bg5.jpg); */
 
+    /* background-position: center; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    animation: animate 16s linear infinite;
+}
+@keyframes animate {
+    0%,100%{
+        background-image: linear-gradient(rgba(52, 63, 105, 0.2),rgba(41, 89, 138, 0.7)), url(new-image/bg5.jpg) ;
+    }
+    25%{
+        background-image: linear-gradient(rgba(52, 63, 105, 0.2),rgba(41, 89, 138, 0.7)), url(new-image/bg4.jpg) ;
+    }
+    50%{
+        background-image: linear-gradient(rgba(52, 63, 105, 0.2),rgba(41, 89, 138, 0.7)), url(new-image/bg3.jpg) ;
+    }
+    75%{
+        background-image: linear-gradient(rgba(52, 63, 105, 0.2),rgba(41, 89, 138, 0.7)), url(new-image/bg2.jpg) ;
+    }
 }
 nav{
     display: flex;
@@ -64,7 +82,11 @@ nav img{
     text-align: center;
 }
 .text-box h1{
-    font-size: 62px;
+    font-size: 55px;
+}
+.text-box h1 span{
+    font-size: 70px;
+    color: chartreuse;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -94,6 +116,10 @@ nav .fa{
 @media(max-width:700px){
     .text-box h1{
         font-size: 20px;
+    }
+    .text-box h1 span{
+        font-size: 30px;
+        color: chartreuse;
     }
     .nav-links ul li{
         display: absolute;
@@ -152,10 +178,10 @@ p{
 }
 .home-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #e8f8fa;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 10px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
@@ -163,6 +189,8 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    background-color: rgb(109, 234, 90);
+    border-radius: 10px;
 }
 
 .home-col:hover{
@@ -195,6 +223,7 @@ h3{
 
 .location-col img{
     width: 100%;
+    height: 100%;
     display: block;
 }
 .layer{
@@ -237,13 +266,15 @@ h3{
     padding-top: 100px;
 }
 .mission-col{
-    flex-basis: 31%;
+    flex-basis: 29%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
 .mission-col img{
     width: 100%;
+    height: 75%;
+
     border-radius: 10px;
 }
 .mission-col p{
@@ -253,7 +284,12 @@ h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+    color:black;
+    background-color: white;
 
+}
+.mission-col h3 span{
+    color: rgb(98, 201, 90);
 }
 
 
@@ -269,10 +305,13 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #e8f8fa;
     padding: 25px;
     cursor: pointer;
     display: flex;
+}
+.testimonial-col h3{
+    color: black;
 }
 .testimonial-col img{
     height : 50px;
